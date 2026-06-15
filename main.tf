@@ -1,5 +1,5 @@
-module "vpc-1" {
-  source = "vpc-1-infra"
+module "v1-vpc-1" {
+  source = "./vpc-1-infra"
 #------------------REGION-----------------------#
   v1-region="ap-south-1"
 #------------------VPC-1-----------------------#
@@ -35,11 +35,10 @@ module "vpc-1" {
 
 #=======================MODULE-2===========================
 
-
-module "vpc-2" {
-  source = "vpc-2-infra"
+module "v2-vpc-2" {
+  source = "./vpc-2-infra"
 #------------------REGION-----------------------#
-  v1-region="ap-south-1"
+  v2-region="ap-south-1"
 #------------------VPC-1-----------------------#
   vpc-2-name= "vpc-2"
   vpc-2-cidr-16="11.0.0.0/16"
@@ -70,11 +69,14 @@ module "vpc-2" {
   instance-type="t3.micro"
   v2-key-pair="poojikeypair"
 }
+
+
 #==================MODULE-3=============================
-module "vpc-3" {
-  source = "vpc-3-infra"
+
+module "v3-vpc-3" {
+  source =  "./vpc-3-infra"
 #------------------REGION-----------------------#
-  v1-region="ap-south-1"
+  v3-region="ap-south-1"
 #------------------VPC-1-----------------------#
   vpc-3-name= "vpc-3"
   vpc-3-cidr-16="12.0.0.0/16"
