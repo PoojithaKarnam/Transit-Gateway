@@ -110,3 +110,49 @@ variable "v2-region" {
 }
 
 
+#-------------Public Route table association--------#
+variable "v2-pub-subnet-1-association" {
+    type = string
+    default = aws_subnet.vpc-2-pub-subnet-1.id
+    description = "public subnet-1" 
+}
+variable "v2-pub-subnet-2-association" {
+    type = string
+    default = ""
+    description = "public subnet-2" 
+}
+variable "v2-pub-subnet-3-association" {
+    type = string
+    default = ""
+    description = "public subnet-3" 
+}
+variable "v2-pub-subnet-4-association" {
+    type = string
+    default = ""
+    description = "public subnet-4" 
+}
+
+
+#-------------Private Route table association--------#
+variable "v2-pri-subnet-1-association" {
+    type = string
+    default = aws_subnet.vpc-2-pri-subnet-1.id
+    description = "private subnet-1" 
+}
+variable "v2-pri-subnet-2-association" {
+    type = string
+    default = ""
+    description = "private subnet-2" 
+}
+variable "v2-pri-subnet-3-association" {
+    type = string
+    default = ""
+    description = "private subnet-3" 
+}
+variable "v2-pri-subnet-4-association" {
+    type = string
+    default = ""
+    description = "private subnet-4" 
+}
+
+
