@@ -1,26 +1,26 @@
-variable "igw-name" {
+variable "v2-igw-name" {
     type = string
-    default = "vpc-1-igw"
+    default = "vpc-2-igw"
     description = "it's a internet gateway tag or name"  
 }
-variable "ngw-name" {
+variable "v2-ngw-name" {
     type = string
-    default = "vpc-1-ngw"
+    default = "vpc-2-ngw"
     description = "it's a nat gateway tag or name"  
 }
-variable "pub-rt-name" {
+variable "v2-pub-rt-name" {
   type = string
-  default = "vpc-1-pub-route-table"
+  default = "vpc-2-pub-route-table"
   description = "it's a public route table name"  
 }
-variable "pri-rt-name" {
+variable "v2-pri-rt-name" {
     type = string
-    default = "vpc-1-pri-route-table"
+    default = "vpc-2-pri-route-table"
     description = "It's a private route table name" 
 }
-variable "security-group-name" {
+variable "v2-security-group-name" {
     type = string
-    default = "vpc-1-security-group"
+    default = "vpc-2-security-group"
     description = "It's a security group name" 
 }
 variable "ssh" {
@@ -38,7 +38,7 @@ variable "https" {
     default = 443
     description = "It allows 443 port number " 
 }
-variable "amazon-linux-ami" {
+variable "v2-amazon-linux-ami" {
     type = string
     default = "ami-0e38835daf6b8a2b9"
     description = "It is amazon linux ami id" 
@@ -48,66 +48,65 @@ variable "instance-type" {
     default = "t3.micro"
     description = "It is an instance type" 
 }
-variable "key-pair" {
+variable "v2-key-pair" {
     type = string
     default = "poojikeypair"
     description = "It is a private and public key pair" 
 }
-variable "pub-server-1" {
+variable "v2-pub-server-1" {
     type = string
-    default = "vpc-1-pub-server"
+    default = "vpc-2-pub-server"
     description = "It is a public server name/tags" 
 }
-variable "private-server-1" {
+variable "v2-private-server-1" {
     type = string
-    default = "vpc-1-pri-server"
+    default = "vpc-2-pri-server"
     description = "It is a private server name/tags" 
 }
-variable "cidr-block-1" {
+variable "v2-cidr-block-1" {
     type = string
-    default = "10.0.0.0/28"
+    default = "11.0.0.0/28"
     description = "It is a cidr for subnet-1" 
 }
-variable "cidr-block-2" {
+variable "v2-cidr-block-2" {
     type = string
-    default = "10.0.0.16/28"
+    default = "11.0.0.16/28"
     description = "It is a cidr for subnet-2" 
 }
-variable "az-1" {
+variable "v2-az-1" {
     type = string
     default = "ap-south-1a"
     description = "It is az-1 in mumbai region" 
 }
-variable "az-2" {
+variable "v2-az-2" {
     type = string
     default = "ap-south-1b"
     description = "It is az-2 in mumbai region" 
 }
-variable "subnet-1-name" {
+variable "v2-subnet-1-name" {
     type = string
-    default = "vpc-1-pub-subnet-1"
+    default = "vpc-2-pub-subnet-1"
     description = "It is public subnet name/tag" 
 }
-variable "subnet-2-name" {
+variable "v2-subnet-2-name" {
     type = string
-    default = "vpc-1-pri-subnet-1"
+    default = "vpc-2-pri-subnet-1"
     description = "It is private subnet name/tag" 
 }
-variable "vpc-cidr-16" {
+variable "vpc-2-cidr-16" {
     type = string
-    default = "10.0.0.0/16"
+    default = "11.0.0.0/16"
     description = "It is a cidr-block for vpc" 
 }
-variable "vpc-name" {
+variable "vpc-2-name" {
     type = string
-    default = "vpc-1"
+    default = "vpc-2"
     description = "It is vpc name/tag" 
 }
-variable "v1-region" {
+variable "v2-region" {
     type = string
     default = "ap-south-1"
     description = "It is a region" 
 }
-
 
 
