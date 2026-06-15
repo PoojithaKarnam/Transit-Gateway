@@ -1,12 +1,12 @@
-module "vpc-1" {
+module "v1-module" {
   source = "./vpc-1-infra"
 }
 
-module "vpc-2" {
+module "v2-module" {
   source = "./vpc-2-infra"
 }
 
-module "vpc-3" {
+module "v3-module" {
   source = "./vpc-3-infra"
 }
 

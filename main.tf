@@ -19,10 +19,6 @@ module "v1-vpc-1" {
   pub-rt-name="vcp-1-public-route-table"
   pri-rt-name="vcp-1-private-route-table"
 
-#-----------------ROUTE TABLES ASSOCIATIONS--------------#
-  pub-subnet-1-association= aws_subnet.vpc-1-pub-subnet-1.id
-  pri-subnet-1-association= aws_subnet.vpc-1-pri-subnet-1.id
-
 #------------------SECURITY GROUP-----------------------#
   security-group-name="vpc-1-security-group"
 #------------------SERVERS-----------------------#
@@ -55,10 +51,6 @@ module "v2-vpc-2" {
 #------------------ROUTE TABLES-----------------------#
   v2-pub-rt-name="vcp-2-public-route-table"
   v2-pri-rt-name="vcp-2-private-route-table"
-
-#-----------------ROUTE TABLES ASSOCIATIONS--------------#
-  v2-pub-subnet-1-association= aws_subnet.vpc-2-pub-subnet-1.id
-  v2-pri-subnet-1-association= aws_subnet.vpc-2-pri-subnet-1.id
 
 #------------------SECURITY GROUP-----------------------#
   v2-security-group-name="vpc-2-security-group"
@@ -93,10 +85,6 @@ module "v3-vpc-3" {
 #------------------ROUTE TABLES-----------------------#
   v3-pub-rt-name="vcp-3-public-route-table"
   v3-pri-rt-name="vcp-3-private-route-table"
-
-#-----------------ROUTE TABLES ASSOCIATIONS--------------#
-  v3-pub-subnet-1-association= aws_subnet.vpc-3-pub-subnet-1.id
-  v3-pri-subnet-1-association= aws_subnet.vpc-3-pri-subnet-1.id
 
 #------------------SECURITY GROUP-----------------------#
   v3-security-group-name="vpc-3-security-group"
