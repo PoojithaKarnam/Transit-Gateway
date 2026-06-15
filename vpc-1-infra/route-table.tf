@@ -6,7 +6,7 @@ resource "aws_route_table" "vpc-1-pub-route-table" {
     cidr_block = "0.0.0.0/0"
   }
   tags = {
-    Name = "vpc-1-pub-route-table"
+    Name = var.pub-rt-name
   }
 }
 
@@ -18,6 +18,6 @@ resource "aws_route_table" "vpc-1-pri-route-table" {
     cidr_block = "0.0.0.0/0"
   }
   tags = {
-    Name = "vpc-1-pri-route-table"
+    Name = var.pri-rt-name
   }
 }

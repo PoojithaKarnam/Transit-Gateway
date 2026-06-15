@@ -3,20 +3,20 @@ resource "aws_security_group" "vpc-1-security-group" {
   vpc_id = aws_vpc.vpc-1.id
 #ingress means inbound
   ingress {
-    from_port   = 22
-    to_port     = 22
+    from_port   = var.ssh
+    to_port     = var.ssh
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = var.http
+    to_port     = var.http
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
-    from_port   = 443
-    to_port     = 443
+    from_port   = var.https
+    to_port     = var.https
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -29,7 +29,7 @@ resource "aws_security_group" "vpc-1-security-group" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "vpc-1-security-group"
+    Name = var.security-group-name
   }
 
 }

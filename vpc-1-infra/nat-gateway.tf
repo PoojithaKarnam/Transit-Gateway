@@ -10,6 +10,6 @@ resource "aws_nat_gateway" "vpc-1-ngw" {
   connectivity_type = "public"
   allocation_id     = aws_eip.nat-eip.id
   tags = {
-    Name = "vpc-1-ngw"
+    Name = var.ngw-name
   }
 }

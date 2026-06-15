@@ -1,18 +1,18 @@
 #Public subnet is created for public server
 resource "aws_subnet" "vpc-1-pub-subnet-1" {
   vpc_id            = aws_vpc.vpc-1.id
-  availability_zone = "ap-south-1a"
-  cidr_block        = "10.0.0.0/28"
+  availability_zone = var.az-1
+  cidr_block        = var.cidr-block-1
   tags = {
-    Name = "vpc-1-pub-subnet-1"
+    Name = var.subnet-1-name
   }
 }
 #Private subnet is created for private server 
 resource "aws_subnet" "vpc-1-pri-subnet-1" {
   vpc_id            = aws_vpc.vpc-1.id
-  availability_zone = "ap-south-1b"
-  cidr_block        = "10.0.0.16/28"
+  availability_zone = var.az-2
+  cidr_block        = var.cidr-block-2
   tags = {
-    Name = "vpc-1-pri-subnet-1"
+    Name = var.subnet-2-name
   }
 }
