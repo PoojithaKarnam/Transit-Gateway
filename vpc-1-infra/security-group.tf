@@ -1,5 +1,7 @@
+#Security group allows SSH(22), http(80), https(443) and for out bound it allowing all
 resource "aws_security_group" "vpc-1-security-group" {
   vpc_id = aws_vpc.vpc-1.id
+#ingress means inbound
   ingress {
     from_port   = 22
     to_port     = 22
@@ -18,6 +20,8 @@ resource "aws_security_group" "vpc-1-security-group" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+#egress means outbound
   egress {
     to_port     = 0
     from_port   = 0

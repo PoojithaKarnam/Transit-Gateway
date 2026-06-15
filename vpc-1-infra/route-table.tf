@@ -1,3 +1,4 @@
+# Public Route table created and route path from route table to internet gateway
 resource "aws_route_table" "vpc-1-pub-route-table" {
   vpc_id = aws_vpc.vpc-1.id
   route {
@@ -9,6 +10,7 @@ resource "aws_route_table" "vpc-1-pub-route-table" {
   }
 }
 
+# Private Route table created and route path from route table to nat gateway
 resource "aws_route_table" "vpc-1-pri-route-table" {
   vpc_id = aws_vpc.vpc-1.id
   route {
