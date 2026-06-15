@@ -93,7 +93,7 @@ variable "subnet-2-name" {
     default = "vpc-1-pri-subnet-1"
     description = "It is private subnet name/tag" 
 }
-variable "vpc-cidr" {
+variable "vpc-cidr-16" {
     type = string
     default = "10.0.0.0/16"
     description = "It is a cidr-block for vpc" 
