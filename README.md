@@ -2,6 +2,7 @@
 Implemented AWS Transit Gateway infrastructure using Terraform to establish centralized connectivity between multiple VPCs, enabling scalable inter-VPC communication and simplified network management.
 
 ## AWS Transit Gateway with Terraform
+## Architecture Diagram
 <img src="transit%20gateway.png" alt="Transit Gateway" width="800">
 
 This project provisions a hub-and-spoke network architecture on AWS using Terraform.
@@ -18,9 +19,6 @@ The infrastructure consists of:
 - NAT Gateway for outbound internet access from private subnets
 - Route tables configured for Transit Gateway routing
 
-## Architecture Diagram
-
-![Transit Gateway Architecture](transit-gateway.png)
 
 ## Components
 
