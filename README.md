@@ -78,7 +78,6 @@ TRANSIT-GATEWAY/
 ├── terraform.tfstate.backup
 ├── transit-gateway.tf
 └── transit gateway.png
-
 ### File Description
 
 | File                                     | Purpose                                 |
