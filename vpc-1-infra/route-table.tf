@@ -5,6 +5,10 @@ resource "aws_route_table" "vpc-1-pub-route-table" {
     gateway_id = aws_internet_gateway.vpc-1-igw.id
     cidr_block = "0.0.0.0/0"
   }
+  route {
+    gateway_id = aws_internet_gateway.vpc-1-igw.id
+    cidr_block = "0.0.0.0/0"
+  }
   tags = {
     Name = var.pub-rt-name
   }
