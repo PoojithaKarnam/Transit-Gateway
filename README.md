@@ -62,3 +62,9 @@ AWS Transit Gateway acts as a central hub connecting all three VPCs, enabling se
 
 ```bash
 terraform init
+
+```bash
+terraform plan
+
+```bash
+terraform apply 
